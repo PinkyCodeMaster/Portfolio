@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet" />
+  <style>
+    /* Custom Styles */
+    .bg-primary {
+      background-color: #251c31;
+    }
+
+    .bg-secondary {
+      background-color: #1a0b2e;
+    }
+
+    .bg-highlight {
+      background-color: #2c1250;
+    }
+
+    .bg-dark-radial {
+      background: radial-gradient(circle, #000000, #320f85);
+    }
+
+    .bg-lightest-radial {
+      background: radial-gradient(circle, #ccd6f6, #763cac);
+    }
+
+    .bg-purple-radial {
+      background: radial-gradient(circle, #4f228d, #763cac);
+    }
+
+    .gradient-linear {
+      background: linear-gradient(to right, #ffffff, #693b93);
+    }
+
+    body {
+      font-family: "Kalnia Glaze", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black">
+  <!-- Header -->
+  <header class="bg-secondary p-4">
+    <nav class="flex justify-between items-center px-6 text-white">
+      <div>
+        <a href="index.html" class="text-2xl font-bold">Scott Jones</a>
+      </div>
+      <ul class="flex space-x-6">
+        <li><a href="index.html#about" class="hover:text-gray-400">About</a></li>
+        <li><a href="index.html#experience" class="hover:text-gray-400">Experience</a></li>
+        <li><a href="index.html#projects" class="hover:text-gray-400">Projects</a></li>
+        <li><a href="index.html#contact" class="hover:text-gray-400">Contact</a></li>
+      </ul>
+      <button>
+        <a href="mailto:scottjones@netgurusolutions.co.uk"
+          class="border border-white px-6 py-3 hover:bg-gray-600">Contact me</a>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Combined Section -->
+    <section id="project-details" class="mb-12 p-8">
+      <!-- Project Header -->
+      <div class="bg-secondary text-white py-8 px-6 rounded-t-lg">
+        <h1 class="text-4xl font-bold" id="project-title">Project Title</h1>
+      </div>
+
+      <!-- Image and Description Section -->
+      <div class="bg-gray-100 flex flex-col lg:flex-row rounded-b-lg overflow-hidden">
+        <div class="lg:w-1/2">
+          <img id="project-image" src="" alt="Project image" class="object-cover w-full h-64 lg:h-full" />
+        </div>
+        <div class="p-6 lg:w-1/2">
+          <p id="project-description" class="text-lg leading-relaxed">
+            <!-- Description text will be populated here -->
+          </p>
+        </div>
+      </div>
+
+      <!-- Tech Stack and Links Section -->
+      <div class="mt-8 flex flex-col lg:flex-row lg:justify-between bg-gray-200 p-6 rounded-lg">
+        <!-- Tech Stack -->
+        <div class="lg:w-1/2 mb-4 lg:mb-0">
+          <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
+          <ul id="tech-list" class="list-disc pl-5">
+            <!-- Tech stack items will be inserted here -->
+          </ul>
+        </div>
+
+        <!-- Links -->
+        <div class="lg:w-1/2">
+          <h2 class="text-2xl font-semibold mb-4">Links</h2>
+          <ul class="list-disc pl-5">
+            <li>
+              <a id="project-code-link" href="#" target="_blank" rel="noopener noreferrer"
+                class="text-blue-500 hover:underline">
+                View Code
+              </a>
+            </li>
+            <li>
+              <a id="project-live-link" href="#" target="_blank" rel="noopener noreferrer"
+                class="text-blue-500 hover:underline">
+                Visit Website
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    </section>
+  </main>
+
+  <script src="src/js/project.js"></script>
+</body>
+
+</html>

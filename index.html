@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scott Jones - Portfolio</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .bg-primary {
+            background-color: #251C31;
+        }
+
+        .bg-secondary {
+            background-color: #1A0B2E;
+        }
+
+        .bg-highlight {
+            background-color: #2C1250;
+        }
+
+        .bg-dark-radial {
+            background: radial-gradient(circle, #000000, #320F85);
+        }
+
+        .bg-lightest-radial {
+            background: radial-gradient(circle, #CCD6F6, #763CAC);
+        }
+
+        .bg-purple-radial {
+            background: radial-gradient(circle, #4F228D, #763CAC);
+        }
+
+        .gradient-linear {
+            background: linear-gradient(to right, #FFFFFF, #693B93);
+        }
+
+        body {
+            font-family: 'Kalnia Glaze', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black ">
+
+    <!-- Header -->
+    <header class="bg-secondary p-4">
+        <nav class="flex justify-between items-center px-6 text-white">
+            <div>
+                <a href="#home" class="text-2xl font-bold">Scott Jones</a>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#experience" class="hover:text-gray-400">Experience</a></li>
+                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+            <button>
+                <a href="mailto:scottjones@netgurusolutions.co.uk"
+                    class="border border-white px-6 py-3 hover:bg-gray-600">Contact me</a>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-6 container mx-auto px-8 md:px-24">
+        <!-- Home Section -->
+        <section id="home"
+            class="text-center py-12 bg-gradient-linear md:flex md:justify-center md:items-center md:space-x-6">
+            <div class="flex justify-center mb-4 md:mb-0">
+                <img src="src/media/me.jpg" alt="Scott Jones portrait" class="w-64 h-64 rounded-full">
+            </div>
+            <div class="">
+                <h1 class="text-4xl font-bold mb-4">Hello, I'm Scott Jones</h1>
+                <p class="text-lg">A passionate software engineer and UI/UX designer.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-12 p-8 rounded-lg bg-gray-100">
+            <h2 class="text-3xl font-semibold mb-4 text-gray-800">About Me</h2>
+            <h3 class="text-2xl font-medium underline underline-offset-4 text-gray-700">I'm a Full Stack Web Developer
+            </h3>
+            <div class="flex flex-col md:flex-row items-start md:items-center py-4 space-y-4 md:space-y-0 md:space-x-6">
+                <p class="text-lg text-gray-600">
+                    Hello! I'm Scott William Jones, a dedicated Full Stack Web Developer with expertise in Next.js,
+                    React, and Tailwind CSS. My professional journey has equipped me with a diverse skill set in both
+                    frontend and backend development. I excel in crafting high-performance web applications and have a
+                    proven track record in designing custom user interfaces, managing databases, and ensuring robust
+                    security through modern authentication methods.
+
+                    From my role at Avalla LTD, where I developed intuitive UIs and managed complex database
+                    interactions, to my experience as a Field Service Engineer handling network infrastructure and
+                    customer relations, I bring a unique blend of technical proficiency and problem-solving skills. My
+                    background in IT networking, laptop management, and software development allows me to approach
+                    challenges from multiple angles and deliver effective solutions.
+
+                    I'm passionate about continuous learning and eager to contribute to dynamic teams where I can
+                    leverage my skills to drive innovation and deliver impactful results.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-12 p-8 rounded-lg">
+            <h2 class="text-3xl font-semibold mb-4">Work Experience</h2>
+            <ul class="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <li class="bg-primary p-4 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold">Software Developer</h3>
+                    <p class="underline-offset-auto">June 2023 - March 2024</p>
+                    <p>
+                        <strong>Avalla LTD</strong><br>
+                        • Designed custom UI using React components, Tailwind CSS, and Shadcn-ui.<br>
+                        • Developed and optimized React functions to enhance web application performance.<br>
+                        • Managed databases with MongoDB, integrating them via tRPC for seamless data interaction.<br>
+                        • Implemented secure authentication using Azure Active Directory (Azure AD).<br>
+                        • Assisted with IT networking tasks, including internet solution maintenance.<br>
+                        • Managed laptop deployment and monitoring through Microsoft Intune.
+                    </p>
+                </li>
+                <li class="bg-primary p-4 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold">Field Service Engineer</h3>
+                    <p class="underline-offset-auto">March 2020 - January 2023</p>
+                    <p>
+                        <strong>Virgin Media Oxfordshire</strong><br>
+                        • Planned and installed network infrastructure for customers and businesses.<br>
+                        • Troubleshot and resolved issues with IoT devices and network setups.<br>
+                        • Built a recurring client base by liaising with customers and generating leads.<br>
+                        • Coordinated with departments and contractors to enhance network quality.
+                    </p>
+                </li>
+                <li class="bg-primary p-4 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold">Van Sales Representative</h3>
+                    <p class="underline-offset-auto">August 2019 - March 2020</p>
+                    <p>
+                        <strong>Watling JCB Oxford</strong><br>
+                        • Managed logistics for collections and deliveries.<br>
+                        • Secured new leads and maintained customer communications.<br>
+                        • Indexed parts and materials using engineering drawings and schematics.<br>
+                        • Addressed issues with sales and stock management.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12 p-8 rounded-lg bg-gray-100">
+            <h2 class="text-3xl font-semibold mb-4">My Projects</h2>
+            <div id="project-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-12 p-8 rounded-lg">
+            <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+            <p>I'm currently looking to join a cross-functional team that values improving people's lives
+                through accessible design. Or have a project in mind? Let's connect.</p>
+            <a href="mailto:scottjones@netgurusolutions.co.uk"
+                class="text-blue-500 hover:underline">scottjones@netgurusolutions.co.uk</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center p-4">
+        <p>&copy; 2024 Scott Jones. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>

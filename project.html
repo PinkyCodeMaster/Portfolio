@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project Details</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet" />
   <style>
     /* Custom Styles */
     .bg-primary {
@@ -39,44 +36,76 @@
       background: linear-gradient(to right, #ffffff, #693b93);
     }
 
-    body {
-      font-family: "Kalnia Glaze", sans-serif;
+    .transition {
+      transition: all 0.3s ease;
+    }
+
+    .hover-effect:hover {
+      background-color: #3c2a40;
     }
   </style>
 </head>
 
-<body class="bg-white text-black">
+<body class="bg-gray-100 text-black">
+
   <!-- Header -->
   <header class="bg-secondary p-4">
     <nav class="flex justify-between items-center px-6 text-white">
+      <!-- Logo or Home Link -->
       <div>
-        <a href="index.html" class="text-2xl font-bold">Scott Jones</a>
+        <a href="index.html#home" class="text-2xl font-bold hover:text-gray-300 transition">Scott Jones</a>
       </div>
-      <ul class="flex space-x-6">
-        <li><a href="index.html#about" class="hover:text-gray-400">About</a></li>
-        <li><a href="index.html#experience" class="hover:text-gray-400">Experience</a></li>
-        <li><a href="index.html#projects" class="hover:text-gray-400">Projects</a></li>
-        <li><a href="index.html#contact" class="hover:text-gray-400">Contact</a></li>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html#about" class="hover:text-gray-300 transition">About</a></li>
+        <li><a href="index.html#experience" class="hover:text-gray-300 transition">Experience</a></li>
+        <li><a href="index.html#projects" class="hover:text-gray-300 transition">Projects</a></li>
+        <li><a href="index.html#contact" class="hover:text-gray-300 transition">Contact</a></li>
       </ul>
-      <button>
+
+      <!-- Contact Button -->
+      <button class="hidden md:block">
         <a href="mailto:scottjones@netgurusolutions.co.uk"
-          class="border border-white px-6 py-3 hover:bg-gray-600">Contact me</a>
+          class="border border-white px-6 py-3 hover:bg-gray-600 transition">Contact me</a>
+      </button>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
       </button>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden text-white">
+      <ul class="flex flex-col space-y-4 mt-4 text-center">
+        <li><a href="index.html#about" class="block py-2 hover:text-gray-300 transition">About</a></li>
+        <li><a href="index.html#experience" class="block py-2 hover:text-gray-300 transition">Experience</a></li>
+        <li><a href="index.html#projects" class="block py-2 hover:text-gray-300 transition">Projects</a></li>
+        <li><a href="index.html#contact" class="block py-2 hover:text-gray-300 transition">Contact</a></li>
+      </ul>
+      <div class="text-center mt-4">
+        <a href="mailto:scottjones@netgurusolutions.co.uk"
+          class="border border-white px-6 py-3 hover:bg-gray-600 transition inline-block">Contact me</a>
+      </div>
+    </div>
   </header>
 
   <!-- Main Content -->
-  <main>
+  <main class="py-6 container mx-auto px-8 md:px-24">
 
-    <!-- Combined Section -->
-    <section id="project-details" class="mb-12 p-8">
+    <!-- Project Details Section -->
+    <section id="project-details" class="mb-12">
       <!-- Project Header -->
-      <div class="bg-secondary text-white py-8 px-6 rounded-t-lg">
+      <div class="bg-secondary text-white py-8 px-6 rounded-t-lg shadow-lg">
         <h1 class="text-4xl font-bold" id="project-title">Project Title</h1>
       </div>
 
       <!-- Image and Description Section -->
-      <div class="bg-gray-100 flex flex-col lg:flex-row rounded-b-lg overflow-hidden">
+      <div class="bg-gray-100 flex flex-col lg:flex-row rounded-b-lg overflow-hidden shadow-lg">
         <div class="lg:w-1/2">
           <img id="project-image" src="" alt="Project image" class="object-cover w-full h-64 lg:h-full" />
         </div>
@@ -88,7 +117,7 @@
       </div>
 
       <!-- Tech Stack and Links Section -->
-      <div class="mt-8 flex flex-col lg:flex-row lg:justify-between bg-gray-200 p-6 rounded-lg">
+      <div class="mt-8 flex flex-col lg:flex-row lg:justify-between bg-gray-200 p-6 rounded-lg shadow-lg">
         <!-- Tech Stack -->
         <div class="lg:w-1/2 mb-4 lg:mb-0">
           <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
@@ -103,13 +132,13 @@
           <ul class="list-disc pl-5">
             <li>
               <a id="project-code-link" href="#" target="_blank" rel="noopener noreferrer"
-                class="text-blue-500 hover:underline">
+                class="text-blue-500 hover:underline transition">
                 View Code
               </a>
             </li>
             <li>
               <a id="project-live-link" href="#" target="_blank" rel="noopener noreferrer"
-                class="text-blue-500 hover:underline">
+                class="text-blue-500 hover:underline transition">
                 Visit Website
               </a>
             </li>
@@ -118,10 +147,10 @@
       </div>
     </section>
 
-    </section>
   </main>
 
   <script src="src/js/project.js"></script>
+  <script src="src/js/navbar.js"></script>
 </body>
 
 </html>

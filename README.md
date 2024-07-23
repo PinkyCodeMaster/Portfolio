@@ -1,4 +1,3 @@
-
 # Personal Portfolio Website
 
 This is a personal portfolio website project created to showcase my work, skills, and experience as a software engineer and UI/UX designer. The website includes information about my professional background, projects I've worked on, and how to contact me.
@@ -9,6 +8,7 @@ This is a personal portfolio website project created to showcase my work, skills
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
+- [Design Resources](#design-resources)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [Contact](#contact)
@@ -30,7 +30,7 @@ This project is designed as a single-page application that highlights my career 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **React.js**
+<!-- - **React.js** -->
 - **Figma** (for design mockups)
 
 ## Screenshots
@@ -38,11 +38,14 @@ This project is designed as a single-page application that highlights my career 
 ### Home Page
 ![Home Page](src/media/Portfolio.png)
 
-### Work Experience Section
-![Work Experience](path/to/your/workexperience-screenshot.png)
+### Projects Section
+![Featured Projects](src/media/featuredprojects-screenshot.png)
 
-### Featured Projects Section
-![Featured Projects](path/to/your/featuredprojects-screenshot.png)
+## Design Resources
+
+You can view the design mockups for this project on Figma:
+
+- **Figma Design Link**: [View the Figma Design](https://www.figma.com/design/qnjBz7OWnM0w4lm48UbqQv/Portfolio?node-id=0-1&t=UMeVqCUMjcteGFLx-1)
 
 ## Setup and Installation
 
@@ -68,7 +71,6 @@ This project is designed as a single-page application that highlights my career 
 5. **View the website**:
     - Your default web browser should open with the URL `http://127.0.0.1:5500` (or a similar local address), displaying your portfolio website.
 
-
 ## Usage
 
 - Navigate through the different sections using the navigation bar.
@@ -85,4 +87,4 @@ If you are interested in working with me or have any questions, feel free to rea
 
 ---
 
-© 2024 Your Name. All rights reserved.
+© 2024 Scott Jones. All rights reserved.

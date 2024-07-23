@@ -36,7 +36,7 @@ This project is designed as a single-page application that highlights my career 
 ## Screenshots
 
 ### Home Page
-![Home Page](./src/media/portfolio.png)
+![Home Page](src/media/Portfolio.png)
 
 ### Work Experience Section
 ![Work Experience](path/to/your/workexperience-screenshot.png)

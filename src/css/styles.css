@@ -22,3 +22,15 @@
  .hover-effect:hover {
      background-color: #3C2A40;
  }
+
+ .bg-highlight {
+     background-color: #2c1250;
+ }
+
+ .bg-lightest-radial {
+     background: radial-gradient(circle, #ccd6f6, #763cac);
+ }
+
+ .bg-purple-radial {
+     background: radial-gradient(circle, #4f228d, #763cac);
+ }

@@ -1,0 +1,24 @@
+ /* Color Scheme */
+ .bg-primary {
+     background-color: #251C31;
+ }
+
+ .bg-secondary {
+     background-color: #1A0B2E;
+ }
+
+ .bg-dark-radial {
+     background: radial-gradient(circle, #1A0B2E, #251C31);
+ }
+
+ .gradient-linear {
+     background: linear-gradient(to right, #F5F7F9, #2C1250);
+ }
+
+ .transition {
+     transition: all 0.3s ease;
+ }
+
+ .hover-effect:hover {
+     background-color: #3C2A40;
+ }

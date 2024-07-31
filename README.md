@@ -46,7 +46,7 @@ You can download the entire project as a ZIP file:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/PinkyCodeMaster/Protfoilo
+    git clone https://github.com/PinkyCodeMaster/Portfolio
     ```
 
 2. **Open the project in Visual Studio Code**:

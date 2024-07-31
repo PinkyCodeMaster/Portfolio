@@ -5,8 +5,8 @@ const projects = [
   {
     id: 1,
     name: 'Portfolio',
-    link: 'https://github.com/PinkyCodeMaster/Protfoilo',
-    website: 'https://pinkycodemaster.github.io/Protfolio/',
+    link: 'https://github.com/PinkyCodeMaster/Portfoilo',
+    website: 'https://pinkycodemaster.github.io/Portfolio/',
     img: 'src/media/Portfolio.png',
     description: 'This portfolio website showcases my skills and projects as a Full Stack Web Developer. Built using HTML, CSS, Tailwind CSS, and JavaScript, the site features a clean and modern design that highlights my technical expertise and work experience. Key features include responsive design, interactive elements, custom styling, project showcase, and an emphasis on user experience. The portfolio not only reflects my technical abilities but also my attention to design and user experience, presenting my projects in a professional and accessible manner.',
     techStack: [

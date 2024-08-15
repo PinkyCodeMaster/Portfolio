@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scott Jones - Portfolio</title>
 
+    <link rel="icon" type="image/x-icon" href="/src/media/favicon.ico">
+
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -31,10 +33,12 @@
             </ul>
 
             <!-- Contact Button -->
-            <button class="hidden md:block">
-                <a href="mailto:scottjones@netgurusolutions.co.uk"
-                    class="border border-white px-6 py-3 hover:bg-gray-600 transition">Contact me</a>
-            </button>
+            <a href="mailto:scottjones@netgurusolutions.co.uk"
+                class="border border-white px-6 py-3 hover:bg-gray-600 transition">
+                <button class="hidden md:block">
+                    Contact me
+                </button>
+            </a>
 
             <!-- Mobile Menu Button -->
             <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
